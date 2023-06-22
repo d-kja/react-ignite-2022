@@ -1,0 +1,33 @@
+name: Deploy docs
+
+on:
+  push:
+    branches:
+      - main # or [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      
+      - name: Install dependencies 
+        working-directory: './design-system'
+        run: npm ci # ci version for npm install
+        
+      - name: Build project 
+        working-directory: './design-system'
+        run: npm run build
+
+      - name: Deploy storybook
+        working-directory: './design-system/packages/docs'
+        run: npm run build-storybook -- --ci --existing-output-dir=storybook-static # "run" related to the "name" = without "-"
+        env:
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
