@@ -1,4 +1,4 @@
-import { Box, BoxProps, Text } from '@d-kja/react'
+import { Box, BoxProps, Text } from '@ignite-d-kja/react'
 import { Meta, StoryObj } from '@storybook/react'
 
 const lorem =

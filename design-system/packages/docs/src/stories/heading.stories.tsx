@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
 
-import { Box, Heading, HeadingProps } from '@d-kja/react'
+import { Box, Heading, HeadingProps } from '@ignite-d-kja/react'
 
 export default {
   title: 'Typography/heading',

@@ -1,4 +1,4 @@
-import { Box, Multistep, MultistepProps } from '@d-kja/react'
+import { Box, Multistep, MultistepProps } from '@ignite-d-kja/react'
 import { Meta, StoryObj } from '@storybook/react'
 
 export default {

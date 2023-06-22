@@ -1,6 +1,6 @@
 {
-  "name": "@d-kja/tokens",
-  "version": "1.0.0",
+  "name": "@ignite-d-kja/tokens",
+  "version": "0.0.1",
   "description": "tokens used in my design system",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -20,7 +20,7 @@
   "devDependencies": {
     "tsup": "^6.7.0",
     "typescript": "^5.0.4",
-    "@d-kja/ts-config": "*",
-    "@d-kja/eslint-config": "*"
+    "@ignite-d-kja/ts-config": "*",
+    "@ignite-d-kja/eslint-config": "*"
   }
 }

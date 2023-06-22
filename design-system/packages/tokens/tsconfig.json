@@ -1,4 +1,4 @@
 {
-  "extends": ["@d-kja/ts-config/base.json"],
+  "extends": ["@ignite-d-kja/ts-config/base.json"],
   "include": ["src"]
 }

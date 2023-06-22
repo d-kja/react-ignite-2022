@@ -6,7 +6,7 @@ import {
   lineHeights,
   radii,
   space,
-} from '@d-kja/tokens'
+} from '@ignite-d-kja/tokens'
 import { createStitches, defaultThemeMap } from '@stitches/react'
 
 export const {

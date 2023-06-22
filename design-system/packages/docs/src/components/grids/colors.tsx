@@ -1,4 +1,4 @@
-import { colors } from '@d-kja/tokens'
+import { colors } from '@ignite-d-kja/tokens'
 import { getContrast } from 'polished'
 
 export const ColorGrid = () => {

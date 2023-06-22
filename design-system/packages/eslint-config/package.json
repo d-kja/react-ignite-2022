@@ -1,7 +1,7 @@
 {
-  "name": "@d-kja/eslint-config",
+  "name": "@ignite-d-kja/eslint-config",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "eslint config for the design system",
   "main": "index.js",
   "keywords": [

@@ -1,4 +1,4 @@
-import { Box, Checkbox, CheckboxProps, Text } from '@d-kja/react'
+import { Box, Checkbox, CheckboxProps, Text } from '@ignite-d-kja/react'
 import { Meta, StoryObj } from '@storybook/react'
 
 export default {

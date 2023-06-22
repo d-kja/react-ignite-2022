@@ -1,4 +1,4 @@
 {
-  "extends": "@d-kja/ts-config/react.json",
+  "extends": "@ignite-d-kja/ts-config/react.json",
   "include": ["src"]
 }

@@ -1,4 +1,4 @@
-import { AvatarProps } from '@d-kja/react'
+import { AvatarProps } from '@ignite-d-kja/react'
 import { Meta, StoryObj } from '@storybook/react'
 import { AvatarComponent } from '../components/avatar'
 

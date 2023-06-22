@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
 
-import { Box, Text, TextProps } from '@d-kja/react'
+import { Box, Text, TextProps } from '@ignite-d-kja/react'
 
 export default {
   title: 'Typography/text',

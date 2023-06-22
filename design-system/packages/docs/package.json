@@ -1,8 +1,9 @@
 {
-  "name": "@d-kja/docs",
-  "version": "1.0.0",
+  "name": "@ignite-d-kja/docs",
+  "version": "0.0.1",
   "description": "documentation for the design system",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "storybook build && touch ./storybook-static/.nojekyll",
@@ -26,10 +27,10 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "@d-kja/eslint-config": "*",
-    "@d-kja/react": "*",
-    "@d-kja/tokens": "*",
-    "@d-kja/ts-config": "*",
+    "@ignite-d-kja/eslint-config": "*",
+    "@ignite-d-kja/react": "*",
+    "@ignite-d-kja/tokens": "*",
+    "@ignite-d-kja/ts-config": "*",
     "@storybook/addon-a11y": "^7.0.22",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
