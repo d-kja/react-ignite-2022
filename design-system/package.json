@@ -1,0 +1,22 @@
+{
+  "name": "@d-kja/design-system",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Monorepo for the design system",
+  "keywords": [
+    "d-kja",
+    "design-system"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build"
+  },
+  "author": "d-kja",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.10.3"
+  }
+}

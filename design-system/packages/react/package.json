@@ -1,0 +1,36 @@
+{
+  "name": "@d-kja/react",
+  "version": "1.0.0",
+  "description": "react project for my design system",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.js",
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "keywords": [
+    "react",
+    "d-kja",
+    "design-system"
+  ],
+  "author": "d-kja",
+  "license": "MIT",
+  "devDependencies": {
+    "@d-kja/eslint-config": "*",
+    "@d-kja/ts-config": "*",
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.4",
+    "react": "^18.2.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@d-kja/tokens": "*",
+    "@radix-ui/react-avatar": "^1.0.3",
+    "@radix-ui/react-checkbox": "^1.0.4",
+    "@stitches/react": "^1.2.8",
+    "phosphor-react": "^1.4.1"
+  }
+}

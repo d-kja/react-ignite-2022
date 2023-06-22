@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-gray-300 antialiased overflow-x-hidden;
+}
+
+body,
+input,
+textarea,
+button {
+  @apply font-normal text-base;
+}
+
+/* Global link styling */
+a {
+  @apply text-green-500 font-bold no-underline transition-colors;
+}
+a:hover {
+  @apply text-green-400;
+}
+a:not(.no-focus) {
+  @apply a11y-focus;
+}
+
+/* Focus border (Accessibility) */
+.a11y-focus {
+  @apply relative focus:outline-none;
+}
+.a11y-focus::after {
+  content: "";
+  @apply absolute -inset-[0.15rem] transition-shadow ring-green-500 rounded-lg;
+}
+.a11y-focus:focus-within {
+  @apply after:ring-2;
+}
+
+/* Scrollbar styling */
+body::-webkit-scrollbar {
+  @apply w-2 bg-transparent;
+}
+body::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+body::-webkit-scrollbar-thumb {
+  @apply bg-gray-800 rounded-lg;
+}
+
+.bullet::before {
+  content: "\2022"; /* bullet point */
+  @apply pr-2;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}

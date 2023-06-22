@@ -1,0 +1,17 @@
+{
+  "name": "@d-kja/eslint-config",
+  "private": true,
+  "version": "1.0.0",
+  "description": "eslint config for the design system",
+  "main": "index.js",
+  "keywords": [
+    "d-kja",
+    "design-system"
+  ],
+  "author": "d-kja",
+  "license": "MIT",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "eslint": "^8.41.0"
+  }
+}

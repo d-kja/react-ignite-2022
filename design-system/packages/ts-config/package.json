@@ -1,0 +1,8 @@
+{
+  "name": "@d-kja/ts-config",
+  "private": true,
+  "version": "1.0.0",
+  "author": "d-kja",
+  "description": "typescript config for the design system",
+  "license": "MIT"
+}

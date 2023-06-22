@@ -1,0 +1,4 @@
+{
+  "extends": ["@d-kja/ts-config/base.json"],
+  "include": ["src"]
+}

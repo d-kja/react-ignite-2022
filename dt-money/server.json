@@ -1,0 +1,52 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Website development",
+      "price": 13000,
+      "category": "Development",
+      "type": "income",
+      "createdAt": "2023-04-01T17:29:32.662Z"
+    },
+    {
+      "id": 2,
+      "description": "UI prototyping",
+      "price": 2300,
+      "category": "Designing",
+      "type": "outcome",
+      "createdAt": "2023-02-01T17:29:32.662Z"
+    },
+    {
+      "description": "Spotify",
+      "price": 12,
+      "type": "outcome",
+      "category": "Hobbies",
+      "createdAt": "2023-04-03T15:07:38.772Z",
+      "id": 3
+    },
+    {
+      "description": "Class 101",
+      "price": 120,
+      "type": "outcome",
+      "category": "Art study",
+      "createdAt": "2023-04-03T15:08:02.584Z",
+      "id": 4
+    },
+    {
+      "description": "Udemy",
+      "price": 3400,
+      "type": "outcome",
+      "category": "Study",
+      "createdAt": "2023-04-03T15:09:41.831Z",
+      "id": 5
+    },
+    {
+      "description": "Ignite",
+      "price": 1720,
+      "type": "outcome",
+      "category": "Study",
+      "createdAt": "2023-04-03T15:10:10.198Z",
+      "id": 6
+    }
+  ]
+}
