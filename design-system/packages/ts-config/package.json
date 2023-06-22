@@ -1,7 +1,7 @@
 {
   "name": "@ignite-d-kja/ts-config",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "d-kja",
   "description": "typescript config for the design system",
   "license": "MIT"
