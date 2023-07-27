@@ -1,0 +1,40 @@
+{
+  "name": "@ignite-d-kja/docs",
+  "version": "0.1.0",
+  "description": "documentation for the design system",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build && touch ./storybook-static/.nojekyll",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "keywords": [],
+  "author": "d-kja",
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.18",
+    "@storybook/addon-interactions": "^7.0.18",
+    "@storybook/addon-links": "^7.0.18",
+    "@storybook/blocks": "^7.0.18",
+    "@storybook/react": "^7.0.18",
+    "@storybook/react-vite": "^7.0.18",
+    "@storybook/storybook-deployer": "^2.8.16",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "@vitejs/plugin-react": "^4.0.0",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.18",
+    "vite": "^4.3.9",
+    "@ignite-d-kja/eslint-config": "*",
+    "@ignite-d-kja/ts-config": "*"
+  },
+  "dependencies": {
+    "@ignite-d-kja/react": "*",
+    "@ignite-d-kja/tokens": "*",
+    "@storybook/addon-a11y": "^7.0.22",
+    "phosphor-react": "^1.4.1",
+    "polished": "^4.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

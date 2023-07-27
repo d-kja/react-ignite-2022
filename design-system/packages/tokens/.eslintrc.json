@@ -1,0 +1,3 @@
+{
+  "extends": ["@ignite-d-kja/eslint-config"]
+}

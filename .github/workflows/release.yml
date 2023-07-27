@@ -1,0 +1,46 @@
+name: Release packages with NPM
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+defaults:
+  run:
+    working-directory: './design-system'
+# jobs:
+#   release:
+#     name: Release
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout Repo
+#         uses: actions/checkout@v3
+
+#       - name: Setup Node.js 18.x
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 18
+#           cache: 'npm'
+#           cache-dependency-path: './design-system/**/package-lock.json'
+
+#       - name: Install Dependencies
+#         # working-directory: './design-system'
+#         run: npm ci
+
+#       - name: Publish to npm
+#         id: changesets
+#         uses: changesets/action@v1
+#         # working dir doesn't work with USES as the command uses is a ref to another repo/action
+#         # working-directory: './design-system'
+#         with:
+#           publish: npm run publish-packages
+
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+#           TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+#           TURBO_TEAM: nyyu
+

@@ -1,0 +1,26 @@
+{
+  "name": "@ignite-d-kja/design-system",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Monorepo for the design system",
+  "keywords": [
+    "d-kja",
+    "design-system"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "publish-packages": "turbo run build --filter=!docs && changeset publish"
+  },
+  "author": "d-kja",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "turbo": "^1.10.3"
+  }
+}
