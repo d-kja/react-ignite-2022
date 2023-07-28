@@ -1,6 +1,9 @@
-import { GlobalProviders } from '@/contexts/global-providers'
-import { Roboto } from 'next/font/google'
+import { Metadata } from 'next'
 import { ReactNode } from 'react'
+
+import { Roboto } from 'next/font/google'
+
+import { GlobalProviders } from '@/contexts/global-providers'
 import { StyleProvider } from '../styles/style-provider'
 
 const roboto = Roboto({
@@ -8,9 +11,15 @@ const roboto = Roboto({
   subsets: ['latin'],
 })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Ignite Call',
   description: 'An app to manage yours and everyones schedule',
+  openGraph: {
+    url: 'https://www.ignite-call.vercel.app',
+    siteName: 'Ignite Call',
+    type: 'website',
+    locale: 'pt_BR',
+  },
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {

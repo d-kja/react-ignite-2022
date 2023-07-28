@@ -1,5 +1,7 @@
+import { getGoogleOAuthToken } from '@/lib/google'
 import { prisma } from '@/lib/prisma'
 import dayjs from 'dayjs'
+import { google } from 'googleapis'
 import { NextRequest } from 'next/server'
 import { fromZodError } from 'zod-validation-error'
 import { UsersDynamicParams } from '../users-route-type'
@@ -52,13 +54,51 @@ export const POST = async (
         },
       )
 
-    await prisma.scheduling.create({
+    const schedule = await prisma.scheduling.create({
       data: {
         email,
         name,
         observations,
         user_id: user.id,
         date: scheduleDate.toDate(),
+      },
+    })
+
+    const auth = await getGoogleOAuthToken(user.id)
+
+    const calendar = google.calendar({
+      version: 'v3',
+      auth,
+    })
+
+    await calendar.events.insert({
+      calendarId: 'primary',
+      conferenceDataVersion: 1,
+      requestBody: {
+        start: {
+          dateTime: scheduleDate.format(),
+        },
+        end: {
+          dateTime: scheduleDate.add(1, 'hour').format(),
+        },
+
+        summary: `Ignite Call: ${name}`,
+        description: observations,
+
+        attendees: [
+          {
+            email,
+            displayName: name,
+          },
+        ],
+        conferenceData: {
+          createRequest: {
+            requestId: schedule.id,
+            conferenceSolutionKey: {
+              type: 'hangoutsMeet',
+            },
+          },
+        },
       },
     })
 
