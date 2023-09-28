@@ -1,0 +1,6 @@
+import{j as l}from"./jsx-runtime-6550a675.js";import{T as n,B as m}from"./index-dca3aa0c.js";import"./index-439caa47.js";import"./_commonjsHelpers-042e6b4d.js";import"./index-754b38b7.js";import"./extends-98964cd2.js";const y={title:"Typography/text",component:n,tags:["autodocs"],args:{children:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos possimus a, accusantium dolorem quisquam pariatur molestiae hic necessitatibus voluptate velit animi perferendis aliquid officia perspiciatis excepturi facere culpa ab quis!"},argTypes:{children:{control:{type:null}},size:{control:{type:"inline-radio"},options:["xxs","xs","sm","md","lg","xl","2xl","4xl","5xl","6xl","7xl","8xl","9xl"]}},decorators:[p=>l.jsx(m,{children:p()})]},e={},s={args:{size:"2xl"}};var r,a,t;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:"{}",...(t=(a=e.parameters)==null?void 0:a.docs)==null?void 0:t.source}}};var o,i,c;s.parameters={...s.parameters,docs:{...(o=s.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: {
+    size: '2xl'
+  }
+}`,...(c=(i=s.parameters)==null?void 0:i.docs)==null?void 0:c.source}}};const q=["Base","Variant"];export{e as Base,s as Variant,q as __namedExportsOrder,y as default};
+//# sourceMappingURL=text.stories-e89efd3c.js.map

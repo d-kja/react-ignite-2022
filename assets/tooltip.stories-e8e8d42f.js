@@ -1,0 +1,6 @@
+import{j as t}from"./jsx-runtime-6550a675.js";import{b as l,c as m,B as d}from"./index-dca3aa0c.js";import"./index-439caa47.js";import"./_commonjsHelpers-042e6b4d.js";import"./index-754b38b7.js";import"./extends-98964cd2.js";const T={title:"actions/tooltip",component:l,tags:["autodocs"],args:{trigger:t.jsx(m,{children:"Hover me"}),text:"Tooltip example!"},argTypes:{trigger:{control:{type:null},description:"Source to hover, receives a ReactNode as child"},text:{type:"string",defaultValue:"Tooltip example",description:"Tooltip text"},open:{type:"boolean",description:"Defines whether the tooltip is open or not"}},decorators:[c=>t.jsx(d,{children:c()})]},e={},o={args:{open:!0}};var r,s,a;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:"{}",...(a=(s=e.parameters)==null?void 0:s.docs)==null?void 0:a.source}}};var p,i,n;o.parameters={...o.parameters,docs:{...(p=o.parameters)==null?void 0:p.docs,source:{originalSource:`{
+  args: {
+    open: true
+  }
+}`,...(n=(i=o.parameters)==null?void 0:i.docs)==null?void 0:n.source}}};const b=["base","alwaysOpen"];export{b as __namedExportsOrder,o as alwaysOpen,e as base,T as default};
+//# sourceMappingURL=tooltip.stories-e8e8d42f.js.map
